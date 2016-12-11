@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LampServer</title>
+	<script src="/res/jquery.min.js"></script>
+	<style>html,body {background-color:#000;} #button {width:50%;color:#fff;}</style>
+	<link rel="apple-touch-icon" href="/res/apple-touch-icon.png">
+	<meta name="viewport" content="user-scalable=no, width=device-width">
+</head>
+<body>
+	<center><img id="button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Light_bulb_(yellow)_icon.svg/2000px-Light_bulb_(yellow)_icon.svg.png" /></center>
+	<script>$('#button').click(function() { $.get('/toggle'); });</script>
+</body>
+</html>
